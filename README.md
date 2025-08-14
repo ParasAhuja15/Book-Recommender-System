@@ -151,7 +151,7 @@ Run the app
 
 ***
 
-## What a Recruiter Should Notice
+##
 
 - Clear problem framing and an opinionated end-to-end solution.
 - Careful data engineering and feature design.
