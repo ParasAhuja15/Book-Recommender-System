@@ -17,10 +17,11 @@ This end-to-end ML system transforms raw book metadata into an intelligent recom
 
 ```mermaid
 graph LR
-    A[1. Data Exploration] -->|Clean & Engineer Features| B[2. Text Classification]
-    B -->|Genre Categorization| C[3. Vector Search Setup]
-    C -->|Semantic Indexing| D[4. Sentiment Analysis]
-    D -->|Emotion Extraction| E[5. Production Application]
+    A[Raw Book Data<br/>7K+ Records] -->|Data Pipeline| B[Feature Engineering<br/>Text Processing]
+    B -->|Classification| C[Genre Categorization<br/>Fiction/Nonfiction]
+    C -->|Emotion Analysis| D[Sentiment Scoring<br/>7 Emotion Dimensions]
+    D -->|Vector Embeddings| E[Semantic Index<br/>Chroma Vector DB]
+    E -->|Query Processing| F[Gradio Interface<br/>Real-time Recommendations]
 
 ```
 
@@ -143,6 +144,7 @@ graph LR
     B -->|Genre Categorization| C[3. Vector Search Setup]
     C -->|Semantic Indexing| D[4. Sentiment Analysis]
     D -->|Emotion Extraction| E[5. Production Application]
+
 ```
 
 | **Step** | **Notebook** | **Purpose** | **Output** |
