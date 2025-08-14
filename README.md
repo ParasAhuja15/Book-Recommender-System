@@ -140,10 +140,10 @@ echo "OPENAI_API_KEY=your_openai_api_key_here" > .env
 
 ```mermaid
 graph LR
-    A[1. Data Exploration] -->|Clean & Engineer Features| B[2. Text Classification]
-    B -->|Genre Categorization| C[3. Vector Search Setup]
-    C -->|Semantic Indexing| D[4. Sentiment Analysis]
-    D -->|Emotion Extraction| E[5. Production Application]
+    A[1. Data<br/>Exploration] -->|Clean & Engineer<br/>Features| B[2. Text<br/>Classification]
+    B -->|Genre<br/>Categorization| C[3. Vector<br/>Search Setup]
+    C -->|Semantic<br/>Indexing| D[4. Sentiment<br/>Analysis]
+    D -->|Emotion<br/>Extraction| E[5. Production<br/>Application]
 
 ```
 
