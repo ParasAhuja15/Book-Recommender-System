@@ -135,18 +135,6 @@ pip install -r requirements.txt
 echo "OPENAI_API_KEY=your_openai_api_key_here" > .env
 ```
 
-### **📊 Data Processing Pipeline**
-**Execute notebooks sequentially for optimal results:**
-
-```mermaid
-graph LR
-    A[1. Data<br/>Exploration] -->|Clean & Engineer<br/>Features| B[2. Text<br/>Classification]
-    B -->|Genre<br/>Categorization| C[3. Vector<br/>Search Setup]
-    C -->|Semantic<br/>Indexing| D[4. Sentiment<br/>Analysis]
-    D -->|Emotion<br/>Extraction| E[5. Production<br/>Application]
-
-```
-
 | **Step** | **Notebook** | **Purpose** | **Output** |
 |----------|-------------|------------|------------|
 | **🔍 1** | `data-exploration.ipynb` | EDA, cleaning, feature engineering | `books_cleaned.csv` |
